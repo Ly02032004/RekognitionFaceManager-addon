@@ -3,7 +3,7 @@ set -e
 
 # Kéo image từ registry (Home Assistant tự động kéo dựa trên config.yaml)
 echo "Starting Docker container from registry..."
-
+mkdir /config/facerekoginition
 # Chạy container với image đã định nghĩa
 docker run -d \
   --name face \
