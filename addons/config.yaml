@@ -13,6 +13,9 @@ startup: application
 boot: auto
 stdin: true
 homeassistant_api: true
+webui: http://[HOST]:5000
+map:
+  - data:rw
 ports:
   5000/tcp: 5000
 ports_description:
