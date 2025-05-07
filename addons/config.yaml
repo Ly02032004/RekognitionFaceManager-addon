@@ -13,9 +13,15 @@ startup: application
 boot: auto
 stdin: true
 homeassistant_api: true
-command: /run.sh
 map:
   - config:rw
+volumes:
+  - volume: /config/face/snapshots
+    container: /app/monitor
+  - volume: /config/face/config.json
+    container: /app/config.json
+  - volume: /config/face/logs
+    container: /app/logs
 ports:
   5000/tcp: 5000
 ports_description:
