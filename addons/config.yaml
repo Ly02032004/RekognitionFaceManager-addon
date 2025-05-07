@@ -13,6 +13,7 @@ startup: application
 boot: auto
 stdin: true
 homeassistant_api: true
+command: /run.sh
 map:
   - config:rw
 ports:
