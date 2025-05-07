@@ -16,7 +16,7 @@ homeassistant_api: true
 host_network: true
 map:
   - config:rw
-image: ghcr.io/ly02032004/rekognitionfacemanager:{arch}-2.0
+image: ghcr.io/ly02032004/rekognitionfacemanager
 ports:
   5000/tcp: 5000
 ports_description:
