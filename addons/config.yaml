@@ -1,5 +1,5 @@
 name: Face Addon
-version: "1.0.0"
+version: "2.0"
 slug: rekognitionface_addon
 description: A custom Home Assistant add-on running a Docker image from GitHub
 url: https://github.com/Ly02032004/RekognitionFaceManager-addon
@@ -9,8 +9,8 @@ arch:
   - armhf
   - armv7
   - i386
-init: false
-startup: services
+startup: application
+boot: auto
 ports:
   5000/tcp: 5000
 ports_description:
