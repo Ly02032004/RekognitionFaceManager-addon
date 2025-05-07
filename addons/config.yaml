@@ -1,8 +1,8 @@
-name: My Custom Add-on
+name: Face Addon
 version: "1.0.0"
-slug: my_addon
+slug: rekognitionface_addon
 description: A custom Home Assistant add-on running a Docker image from GitHub
-url: https://github.com/your-username/homeassistant-addons
+url: https://github.com/Ly02032004/RekognitionFaceManager-addon
 arch:
   - aarch64
   - amd64
