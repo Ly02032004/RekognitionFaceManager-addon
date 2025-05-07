@@ -24,10 +24,7 @@ ports_description:
 volumes:
   - volume: /config/face/snapshots
     container: /app/monitor
-    access: rw
   - volume: /config/face/config.json
     container: /app/config.json
-    access: rw
   - volume: /config/face/logs
     container: /app/logs
-    access: rw
