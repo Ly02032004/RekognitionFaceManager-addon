@@ -13,3 +13,7 @@ startup: application
 boot: auto
 stdin: true
 homeassistant_api: true
+ports:
+  5000/tcp: 5000
+ports_description:
+  5000/tcp: Web interface (if applicable)
