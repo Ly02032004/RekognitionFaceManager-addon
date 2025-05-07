@@ -14,7 +14,7 @@ boot: auto
 stdin: true
 homeassistant_api: true
 map:
-  - config/facerekoginition:rw
+  - config:rw
 ports:
   5000/tcp: 5000
 ports_description:
