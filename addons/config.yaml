@@ -21,10 +21,3 @@ ports:
   5000/tcp: 5000
 ports_description:
   5000/tcp: "Web interface (if applicable)"
-volumes:
-  - volume: /config/face/snapshots
-    container: /app/monitor
-  - volume: /config/face/config.json
-    container: /app/config.json
-  - volume: /config/face/logs
-    container: /app/logs
