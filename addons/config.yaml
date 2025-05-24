@@ -21,3 +21,11 @@ ports:
   5000/tcp: 5000
 ports_description:
   5000/tcp: "Web interface (if applicable)"
+environment:
+  SERCERT_KEY: "{AWS_SERCERT_KEY}"
+  API_KEY: "{AWS_API_KEY}"
+  COLLECTION_ID: "{COLLECTION_ID}"
+  MQTT_HOST: "{MQTT_HOST}"
+  MQTT_PORT: "{MQTT_PORT}"
+  MQTT_USER: "{MQTT_USER}"
+  MQTT_PASS: "{MQTT_PASS}"
