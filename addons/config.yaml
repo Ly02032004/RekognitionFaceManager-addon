@@ -21,6 +21,22 @@ ports:
   5000/tcp: 5000
 ports_description:
   5000/tcp: "Web interface (if applicable)"
+options:
+  aws_sercret_key: ""
+  aws_api_key: ""
+  collection_id: ""
+  mqtt_host: ""
+  mqtt_port: "1883"
+  mqtt_user: ""
+  mqtt_pass: ""
+schema:
+  aws_sercret_key: str
+  aws_api_key: str
+  collection_id: str
+  mqtt_host: str
+  mqtt_port: int
+  mqtt_user: str
+  mqtt_pass: str
 environment:
   SERCERT_KEY: "{AWS_SERCERT_KEY}"
   API_KEY: "{AWS_API_KEY}"
