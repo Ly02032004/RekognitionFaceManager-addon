@@ -1,7 +1,7 @@
 # Defining the Home Assistant add-on configuration for AWS FaceRekognition
 name: AWS FaceRekognition
 description: AWS FaceRekognition add-on for Home Assistant
-version: "2.6.1"
+version: "2.6"
 slug: aws_facereognition
 url: https://github.com/Ly02032004/RekognitionFaceManager-addon
 arch:
