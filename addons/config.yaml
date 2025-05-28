@@ -1,7 +1,7 @@
 # Defining the Home Assistant add-on configuration for AWS FaceRekognition
 name: AWS FaceRekognition
 description: AWS FaceRekognition add-on for Home Assistant
-version: "2.6"
+version: "2.7"
 slug: aws_facereognition
 url: https://github.com/Ly02032004/RekognitionFaceManager-addon
 arch:
@@ -22,26 +22,29 @@ ports:
 ports_description:
   5000/tcp: "Web interface (if applicable)"
 options:
-  aws_sercret_key: ""
+  aws_secret_key: ""
   aws_api_key: ""
   collection_id: ""
   mqtt_host: ""
   mqtt_port: "1883"
   mqtt_user: ""
   mqtt_pass: ""
+  monitor_path: ""
 schema:
-  aws_sercret_key: str
+  aws_secret_key: str
   aws_api_key: str
   collection_id: str
   mqtt_host: str
   mqtt_port: int
   mqtt_user: str
-  mqtt_pass: str
+  mqtt_pass: password
+  monitor_path: str
 environment:
-  SERCERT_KEY: "{AWS_SERCERT_KEY}"
-  API_KEY: "{AWS_API_KEY}"
-  COLLECTION_ID: "{COLLECTION_ID}"
-  MQTT_HOST: "{MQTT_HOST}"
-  MQTT_PORT: "{MQTT_PORT}"
-  MQTT_USER: "{MQTT_USER}"
-  MQTT_PASS: "{MQTT_PASS}"
+  SECRET_KEY: "{aws_secret_key}"
+  API_KEY: "{aws_api_key}"
+  COLLECTION_ID: "{collection_id}"
+  MQTT_HOST: "{mqtt_host}"
+  MQTT_PORT: "{mqtt_port}"
+  MQTT_USER: "{mqtt_user}"
+  MQTT_PASS: "{mqtt_pass}"
+  MONITOR_PATH: "{monitor_path}"
