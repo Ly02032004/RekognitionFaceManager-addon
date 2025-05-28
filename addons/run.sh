@@ -20,6 +20,6 @@ docker run -d \
   -e MQTT_USER="$MQTT_USER" \
   -e MQTT_PASS="$MQTT_PASS" \
   -e MONITOR_PATH="$MONITOR_PATH" \
-  rekognitionfacemanager:2.6
+  rekognitionfacemanager:2.7
 
 echo "Container stopped."
