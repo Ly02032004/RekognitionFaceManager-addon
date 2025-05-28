@@ -12,9 +12,14 @@ docker run -d \
   --name face \
   --restart unless-stopped \
   --network host \
-  -v /config/facerekoginition/www/snapshots:/app/monitor \
-  -v /config/facerekoginition/config.json:/app/config.json \
-  -v /config/facerekoginition/logs:/app/logs \
-  rekognitionfacemanager:2.0
+  -e SECRET_KEY="$SECRET_KEY" \
+  -e API_KEY="$API_KEY" \
+  -e COLLECTION_ID="$COLLECTION_ID" \
+  -e MQTT_HOST="$MQTT_HOST" \
+  -e MQTT_PORT="$MQTT_PORT" \
+  -e MQTT_USER="$MQTT_USER" \
+  -e MQTT_PASS="$MQTT_PASS" \
+  -e MONITOR_PATH="$MONITOR_PATH" \
+  rekognitionfacemanager:2.7
 
 echo "Container stopped."
