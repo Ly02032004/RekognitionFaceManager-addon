@@ -35,7 +35,7 @@ schema:
   aws_api_key: str
   collection_id: str
   mqtt_host: str
-  mqtt_port: int
+  mqtt_port: str
   mqtt_user: str
   mqtt_pass: password
   monitor_path: str
