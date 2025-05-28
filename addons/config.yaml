@@ -31,14 +31,30 @@ options:
   mqtt_pass: ""
   monitor_path: ""
 schema:
-  aws_secret_key: str
-  aws_api_key: str
-  collection_id: str
-  mqtt_host: str
-  mqtt_port: int
-  mqtt_user: str
-  mqtt_pass: password
-  monitor_path: str
+  aws_secret_key: 
+    type: str
+    description: AWS Secret Key
+  aws_api_key: 
+    type: str
+    description: AWS API Key
+  collection_id: 
+    type: str
+    description: AWS Rekonigtion Collection
+  mqtt_host: 
+    type: str
+    description: MQTT Host
+  mqtt_port: 
+    type: int
+    description: MQTT Port
+  mqtt_user: 
+    type: str
+    description: MQTT User
+  mqtt_pass: 
+    type: password
+    description: AWS Secret Key
+  monitor_path: 
+    type: str
+    description: Path Monitor Snapshot
 environment:
   SECRET_KEY: "{aws_secret_key}"
   API_KEY: "{aws_api_key}"
